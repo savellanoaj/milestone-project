@@ -1,0 +1,73 @@
+/* unchanged part of the webpage */
+* {
+    margin: 0 auto;
+    /* padding: 0; */
+}
+/* header decoration containing a backup color in case the picture fails to upload and other condition to fit the picture */
+.header {
+    background-color: orangered;
+    color: #fffcaf;
+    font-family: cursive;
+    background-image: url(../img/dragon\ balls\ -\ Copy.jpg);
+    background-blend-mode: normal;
+    background-size: cover;
+    padding-top: 100px;
+    padding-top: 100px;
+}
+/*  */
+.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* h1 changing size */
+h1 {
+    font-size: 40px;
+}
+/* flexibility and only 90% of main is used */
+main {
+    flex: 1;
+    width: 90%;
+}
+/* basic setting of nav-bar or navigation bar */
+.nav-bar {
+    background-color: skyblue;
+    overflow: hidden;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* anchor tagged from nav-bar with instructions as followed */
+.nav-bar a {
+    display: block;
+    text-align: center;
+    color: azure;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+/* color change once the mouse hover this class */
+.btn:hover {
+    background-color: #384d55;
+}
+/* fixed footer with all the requirements to stay bellow */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* changing part of the page starts here below */
+h2 {
+    text-align: left;
+    padding: 20px;
+}
+/* division of this div in two columns & gap between*/
+.ultra {
+    columns: 2;
+    column-gap: 4;
+}
