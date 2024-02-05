@@ -8,7 +8,7 @@
     background-color: orangered;
     color: #fffcaf;
     font-family: cursive;
-    background-image: url(images/dragon-balls.jpg);
+    background-image: url(../images/dragon-balls.jpg);
     background-blend-mode: normal;
     background-size: cover;
     padding-top: 100px;
@@ -63,17 +63,12 @@ footer {
 
 /* changing part of the page starts here below */
 h2 {
-    text-align: left;
+    text-align: center;
     padding: 20px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-image: url(images/saiyans-transformation.jpg);
+    background-image: url(../images/saiyans-transformation.jpg);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
