@@ -61,12 +61,6 @@ footer {
     width: 100%;
 }
 
-/* changing part of the page starts here below */
-h2 {
-    text-align: center;
-    padding: 20px;
-}
-
 body {
     background-image: url(../images/saiyans-transformation.jpg);
     background-size: cover;
@@ -82,7 +76,6 @@ body {
     color: black;
     box-shadow: 0 0 20px 2px black;
 }
-
 
 h2,h3 {
     text-align: center;
