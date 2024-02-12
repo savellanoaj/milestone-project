@@ -71,7 +71,7 @@ h2 {
 .goku-smile {
     max-height: 40%;
     max-width: 40%;
-    float: right;
+    position: relative;
 }
 
 
@@ -79,4 +79,19 @@ h2 {
 .one {
     columns: 2;
     column-gap: 4;
+}
+
+/* adjustments to p text */
+.text-design {
+    padding: 10px;
+    text-align: left;
+}
+
+.goku-smile {
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(177, 165, 1);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
 }
