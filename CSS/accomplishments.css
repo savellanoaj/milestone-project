@@ -60,7 +60,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 /* changing part of the page starts here below */
 h2 {
     text-align: left;
@@ -71,4 +70,34 @@ h2 {
     columns: 2;
     column-gap: 4;
 }
-
+/* videos border and position */
+.one-b {
+    border: 8px solid;
+    border-color: crimson;
+    float:right;
+    margin-bottom:30%;
+    
+    
+}
+/* text design border and position */
+.one-a {
+    border: 2px solid;
+}
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+     h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    } 
+}

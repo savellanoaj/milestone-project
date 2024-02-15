@@ -22,81 +22,84 @@
         <a class="btn" href="interests.html">Interests</a>
         <a class="btn" href="saiyan.html">Saiyan</a>
     </div>
+    <main class="wrapper">
+        <div class="form-box">
+            <form action="/process" method="post">
+                <h2>Want to be a Saiyan? Sign Up!</h2>
+                <div class="all-box">
+                    <label class="matched" for="first_name">First Name</label>
+                    <input class="input-box-one" type="text" name="first_name" id="first_name">
+                </div>
+                <div class="all-box">
+                    <label class="matched" for="last_name">Last Name</label>
+                    <input class="input-box-one" type="text" name="last_name" id="last_name">
+                </div>
+                <div class="all-box">
+                    <label class="matched" for="email_address">Email Address</label>
+                    <input class="input-box-one" type="email" name="email_address" id="email_address">
+                </div>
+                <div class="all-box">
+                    <label class="matched" for="new">New Password</label>
+                    <input class="input-box-one" type="password" name="password" id="new" minlength="8"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters."
+                        required>
+                </div>
+                <div class="all-box">
+                    <label class="matched" for="confirmation">Confirmation Password</label>
+                    <input class="input-box-one" type="password" name="password" id="confirmation" minlength="8"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters."
+                        required>
+                </div>
+                <div class="all-box">
+                    <label class="matched" for="birthday">Birthday</label>
+                    <input class="input-box-two" type="date" name="birthday" id="birthday">
+                </div>
+                <div class="all-box">
+                    <label id="gender_identity">Gender Identity</label>
+                    <p><input type="radio" name="male" value="g" id="male" class="input-box-three">
+                        <label for="male">Male</label>
+                        <input type="radio" name="female" value="e" id="female" class="input-box-three">
+                        <label for="female">Female</label>
+                        <input type="radio" name="non_binary" value="n" id="non_binary" class="input-box-three">
+                        <label for="non_binary">Non-binary</label>
+                        <input type="radio" name="no_answer" value="d" id="no_answer" class="input-box-three">
+                        <label for="no_answer">I prefer not to answer</label>
+                    </p>
+                </div>
+                <div class="all-box">
+                    <label for="comment">A short description about myself.</label>
+                    <textarea class="input-box-one" name="comment" id="comment" cols="51" rows="8"></textarea>
+                </div>
+                <div class="all-box">
+                    <label id="progamming">Favorite Language</label>
+                    <select name="favorite" id="languages">
+                        <option value="language">Choose a language</option>
+                        <option value="c">C</option>
+                        <option value="c++">C++</option>
+                        <option value="html">HTML</option>
+                        <option value="javaScript">JavaScript</option>
+                        <option value="css">CSS</option>
+                        <option value="mysql">MySQL</option>
+                        <option value="python">Pyhton</option>
+                        <option value="react">React</option>
+                        <option value="jinja">Jinja</option>
+                        <option value="php">PHP</option>
+                    </select>
+                </div>
+                <div class="all-box">
+                    <input type="checkbox" name="update" id="update">
+                    <label id="line">Yes, I would like to receive periodic email updates</label>
+                </div>
+                <div class="all-box">
+                    <input type="submit" value="Create Account" id="create">
+                </div>
+                <div class="all-box"></div>
+            </form>
+        </div>
 
-    <div class="form-box">
-        <form action="/process" method="post">
-            <h2>Want to be a Saiyan? Sign Up!</h2>
-            <div class="all-box">
-                <label class="matched" for="first_name">First Name</label>
-                <input class="input-box-one" type="text" name="first_name" id="first_name">
-            </div>
-            <div class="all-box">
-                <label class="matched" for="last_name">Last Name</label>
-                <input class="input-box-one" type="text" name="last_name" id="last_name">
-            </div>
-            <div class="all-box">
-                <label class="matched" for="email_address">Email Address</label>
-                <input class="input-box-one" type="email" name="email_address" id="email_address">
-            </div>
-            <div class="all-box">
-                <label class="matched" for="new">New Password</label>
-                <input class="input-box-one" type="password" name="password" id="new" minlength="8"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters." required>
-            </div>
-            <div class="all-box">
-                <label class="matched" for="confirmation">Confirmation Password</label>
-                <input class="input-box-one" type="password" name="password" id="confirmation" minlength="8"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters." required>
-            </div>
-            <div class="all-box">
-                <label class="matched" for="birthday">Birthday</label>
-                <input class="input-box-two" type="date" name="birthday" id="birthday">
-            </div>
-            <div class="all-box">
-                <label id="gender_identity">Gender Identity</label>
-                <p><input type="radio" name="male" value="g" id="male" class="input-box-three">
-                <label for="male">Male</label>
-                <input type="radio" name="female" value="e" id="female" class="input-box-three">
-                <label for="female">Female</label>
-                <input type="radio" name="non_binary" value="n" id="non_binary" class="input-box-three">
-                <label for="non_binary">Non-binary</label>
-                <input type="radio" name="no_answer" value="d" id="no_answer" class="input-box-three">
-                <label for="no_answer">I prefer not to answer</label></p>
-            </div>
-            <div class="all-box">
-                <label for="comment">A short description about myself.</label>
-                <textarea class="input-box-one" name="comment" id="comment" cols="51" rows="8"></textarea>
-            </div>
-            <div class="all-box">
-                <label id="progamming">Favorite Language</label>
-                <select name="favorite" id="languages">
-                    <option value="language">Choose a language</option>
-                    <option value="c">C</option>
-                    <option value="c++">C++</option>
-                    <option value="html">HTML</option>
-                    <option value="javaScript">JavaScript</option>
-                    <option value="css">CSS</option>
-                    <option value="mysql">MySQL</option>
-                    <option value="python">Pyhton</option>
-                    <option value="react">React</option>
-                    <option value="jinja">Jinja</option>
-                    <option value="php">PHP</option>
-                </select>
-            </div>
-            <div class="all-box">
-                <input type="checkbox" name="update" id="update">
-                <label id="line">Yes, I would like to receive periodic email updates</label>
-            </div>
-            <div class="all-box">
-                <input type="submit" value="Create Account" id="create">
-            </div>
-            <div class="all-box"></div>
-        </form>
-    </div>
 
-    <main>
 
         <footer>
             <small>&copy; 2024 by AJ Savellano, Isaac Uili & Mallory Ebengho, All Rights Reserved
