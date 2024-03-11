@@ -68,3 +68,18 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     }
 });
+
+function map() {
+    let CustomOp = {
+        center: new google.maps.LatLng(
+            47.61683858573686, -122.32154285872278),
+        zoom: 17,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    // Map object
+    let map = new google.maps.Map(
+        document.getElementById("DivID"),
+        CustomOp
+    );
+}
