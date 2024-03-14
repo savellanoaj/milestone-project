@@ -67,7 +67,7 @@ h2 {
 }
 /* goku smile image */
 .goku-smile {
-    width: 40%;
+    width: 30%;
     float: right;
 
 }
@@ -81,13 +81,12 @@ h2 {
 }
 /* paragraph text design*/
 .text-design {
-    padding: 10px;
+    padding-left: 20px;
     text-align: left;
     float: left;
     border: solid;
     border-color: blue;
-    margin-bottom: 10px;
-    border-radius: 3%;
+    margin: 10px;
 
 }
 /* DESKTOP */
