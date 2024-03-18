@@ -1,0 +1,14 @@
+/* videos border and position */
+.one-b {
+    border: 8px solid;
+    border-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30%;
+}
+
+/* text design border and position */
+.one-a {
+    border: blue 2px solid;
+}

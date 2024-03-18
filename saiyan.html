@@ -24,7 +24,7 @@
     </div>
     <main class="wrapper">
         <div class="form-box">
-            <form action="/process" method="post">
+            <form action="https://postman-echo.com/post" method="POST">
                 <h2>Want to be a Saiyan? Sign Up!</h2>
                 <div class="all-box">
                     <label class="matched" for="first_name">First Name</label>
@@ -58,13 +58,14 @@
                 </div>
                 <div class="all-box">
                     <label id="gender_identity">Gender Identity</label>
-                    <p><input type="radio" name="male" value="g" id="male" class="input-box-three">
+                    <p>
+                        <input type="radio" name="gender" value="male" id="male" class="input-box-three">
                         <label for="male">Male</label>
-                        <input type="radio" name="female" value="e" id="female" class="input-box-three">
+                        <input type="radio" name="gender" value="female" id="female" class="input-box-three">
                         <label for="female">Female</label>
-                        <input type="radio" name="non_binary" value="n" id="non_binary" class="input-box-three">
+                        <input type="radio" name="gender" value="non_binary" id="non_binary" class="input-box-three">
                         <label for="non_binary">Non-binary</label>
-                        <input type="radio" name="no_answer" value="d" id="no_answer" class="input-box-three">
+                        <input type="radio" name="gender" value="no_answer" id="no_answer" class="input-box-three">
                         <label for="no_answer">I prefer not to answer</label>
                     </p>
                 </div>

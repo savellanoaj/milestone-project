@@ -3,6 +3,7 @@
     margin: 0 auto;
     /* padding: 0; */
 }
+
 /* header decoration containing a backup color in case the picture fails to upload and other condition to fit the picture */
 .header {
     background-color: orangered;
@@ -14,6 +15,7 @@
     padding-top: 100px;
     padding-top: 100px;
 }
+
 /*  */
 .container {
     max-width: 100%;
@@ -22,15 +24,18 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 /* h1 changing size */
 h1 {
     font-size: 40px;
 }
+
 /* flexibility and only 90% of main is used */
 main {
     flex: 1;
     width: 90%;
 }
+
 /* basic setting of nav-bar or navigation bar */
 .nav-bar {
     background-color: skyblue;
@@ -38,6 +43,7 @@ main {
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 /* anchor tagged from nav-bar with instructions as followed */
 .nav-bar a {
     display: block;
@@ -46,10 +52,12 @@ main {
     padding: 14px 20px;
     text-decoration: none;
 }
+
 /* color change once the mouse hover this class */
 .btn:hover {
     background-color: #384d55;
 }
+
 /* fixed footer with all the requirements to stay bellow */
 footer {
     text-align: center;
@@ -60,55 +68,62 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 /* changing part of the page starts here below */
 h2 {
     text-align: left;
     padding: 20px;
 }
+
 /* division of this div in two columns & gap between*/
 .ultra {
     columns: 2;
     column-gap: 4;
 }
+
 /* videos border and position */
 .one-b {
     border: 8px solid;
     border-color: crimson;
-    float:right;
-    margin-bottom:30%;
-    
-    
+    float: right;
+    margin-bottom: 30%;
+
+
 }
+
 /* text design border and position */
 .one-a {
     border: blue 2px solid;
 }
+
 /* TABLET */
 @media all and (min-width:501px) and (max-width:1199px) {
     main.wrapper {
         width: 90%;
         margin: auto;
     }
-    
-     h1 {
+
+    h1 {
         width: 89%;
         padding-left: 1%;
     }
-    
+
     picture.profile img {
         width: 50%;
         float: right;
         margin-left: 1em;
-    } 
+    }
 }
+
 /* DESKTOP */
 @media all and (min-width:1200px) {
     main.wrapper {
         width: 95%;
         margin: auto;
     }
-    
+
 }
+
 /* TABLET */
 @media all and (min-width:501px) and (max-width:1199px) {
     main.wrapper {
@@ -136,12 +151,35 @@ h2 {
         flex-wrap: wrap;
         flex-direction: column;
     }
-    
+
     .nav-bar {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
     }
-    
+
+}
+
+.transition-fade {
+    transition: opacity 1s ease;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.fade.show {
+    opacity: 1;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
